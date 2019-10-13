@@ -1,0 +1,43 @@
+/* Custom CSS */
+
+/* Basic settings */
+
+body, html
+{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Navigation */
+
+#logo{
+    width: 50%;
+}
+
+
+
+/* Promo */
+
+.carousel-item{
+    height: 500px;
+}
+
+
+/* Usluge */
+
+#usluge h2{
+    margin-bottom: 50px;
+}
+
+#usluge img{
+    width: 15em;
+}
+
+/* Osoblje */
+
+#osoblje img{
+    width: 400px;
+    margin: 0 auto;
+}
