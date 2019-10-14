@@ -1,1 +1,2 @@
-JavaScript / Bootstrap Website | Veterinarska Ambulanta Karaula [NWD Project]
+Veterinarska Ambulanta Karaula [NWD Project]
+JavaScript / Bootstrap Website 
