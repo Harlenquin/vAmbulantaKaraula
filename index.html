@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Veterinarska služba Karaula</title>
@@ -11,168 +10,240 @@
 
 
   <body>
-    <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" id="logo" alt="..."></a>
+    <!-- Navigation -->
+    <div id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" height="60" alt="mdb logo">
+        </a>
+        
+        <a class="callLogo" href="tel:123-456-7890">
+          <img src="img/callImg.jpg" class="callLogo" height="40" alt="mdb logo">
+        </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Naslovnica<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Usluge</a>
+              <a class="nav-link" href="#">Usluge</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">O nama</a>
+                    <a class="nav-link" href="#">O.nama</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Galerija</a>
+                    <a class="nav-link" href="#">Galerija</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Trgovina</a>
+                    <a class="nav-link" href="#">Trgovina</a>
             </li>
           </ul>
         </div>
       </nav>
+    </div>
+    <!-- Navigation !END! -->
 
-      <!-- Navigation !END! -->
 
-      <!-- Promo -->
-
+    <!-- Promo -->
+    <div id="promo">
       <!--Carousel Wrapper-->
-        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-            </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
-            <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <div class="view">
-                <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                    alt="First slide">
-                <div class="mask rgba-black-light"></div>
-                </div>
-                <div class="carousel-caption">
-                <h3 class="h3-responsive">Light mask</h3>
-                <p>First text</p>
-                </div>
+      <div id="carousel-example-2" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <img class="d-block mx-auto" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+              <div class="mask rgba-black-light"></div>
             </div>
-            <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                <img class="d-block " src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                    alt="Second slide">
-                <div class="mask rgba-black-strong"></div>
-                </div>
-                <div class="carousel-caption">
-                <h3 class="h3-responsive">Strong mask</h3>
-                <p>Secondary text</p>
-                </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Light mask</h3>
+              <p>First text</p>
             </div>
-            <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                <img class="d-block" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                    alt="Third slide">
-                <div class="mask rgba-black-slight"></div>
-                </div>
-                <div class="carousel-caption">
-                <h3 class="h3-responsive">Slight mask</h3>
-                <p>Third text</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block mx-auto" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+              <div class="mask rgba-black-strong"></div>
             </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Strong mask</h3>
+              <p>Secondary text</p>
             </div>
-            <!--/.Slides-->
-            <!--Controls-->
-            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-            <!--/.Controls-->
-        </div>
-        <!--/.Carousel Wrapper-->
-
-        <!-- Usluge -->
-
-        <div id="usluge">
-            <h2 class="text-center mt-5">Usluge</h2>
-            <div class="row">
-                <div class="text-center col-md-4">
-                        <img src="img/test.jpg" class="rounded-circle mt-4" alt="...">
-                        <h3 class="mt-4 mb-4">Tekst</h3>
-                        <p class="mx-auto" style="width: 300px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="text-center col-md-4">
-                        <img src="img/test.jpg" class="rounded-circle mt-4" alt="...">
-                        <h3 class="mt-4 mb-4">Tekst</h3>
-                        <p class="mx-auto" style="width: 300px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="text-center col-md-4">
-                        <img src="img/test.jpg" class="rounded-circle mt-4" alt="...">
-                        <h3 class="mt-4 mb-4">Tekst</h3>
-                        <p class="mx-auto" style="width: 300px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>          
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block mx-auto" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+              <div class="mask rgba-black-slight"></div>
             </div>
-        </div>
-
-        <!-- Usluge !END!-->
-
-
-        <!-- Osoblje -->
-
-        <div id="osoblje">
-          <h2 class="text-center mt-5 mb-5">Osoblje</h2>
-
-          <div class="col-12 col-md-4 text-center">
-            <div class="card mb-2">
-              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title font-weight-bold">Card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a class="btn btn-primary btn-md btn-rounded">Button</a>
-              </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
             </div>
           </div>
         </div>
-
-        <!-- Osoblje !END! -->
-
-
-        <!-- Video -->
-
-        <div id="video">
-          <div class="embed-responsive embed-responsive-16by9">
-            <video class="video-fluid z-depth-1" autoplay loop controls muted>
-              <source src="video/promo.mp4" type="video/mp4" />
-            </video>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+    </div>
+  
+  
+    <!-- Usluge -->
+    <div id="usluge" class="mb-5">
+      <h2 class="text-center mt-5">Usluge</h2>
+      <div class="row">
+        <div class="text-center col-md-6 col-lg-4">
+          <img src="img/doctor.svg" class="smallerImg mt-4" alt="...">
+          <h3 class="mt-4 mb-4">Internistički pregledi</h3>
+          <p class="mx-auto">U veterinarskoj ambulanti DODO VET vaš će ljubimac dobiti potpunu primarnu veterinarsku njegu kao i niz specijalističkih pregleda poput dermatološkog, oftalmološkog, kardiološkog.</p>
+        </div>
+        <div class="text-center col-md-6 col-lg-4">
+          <img src="img/medkit.svg" class="mt-4" alt="...">
+          <h3 class="mt-4 mb-4">Preventivna cijepljenja</h3>
+          <p class="mx-auto">Štenci i mačići imaju kolostralna antitijela do dobi od oko 3 mjeseca. Njihov nivo počinje padati u dobi između 6 i 8 tjedana, ovisno o cjepnom statusu majke. Upravo u toj dobi štenad prima prvo cjepivo protiv zaraznih bolesti.</p>
+        </div>
+        <div class="text-center col-md-6 col-lg-4">
+          <img src="img/paw.svg" class="mt-4" alt="...">
+          <h3 class="mt-4 mb-4">Šišanje, kupanje, uređivanje</h3>
+          <p class="mx-auto">Vašeg ljubimca njegujemo sa kvalitetnim kozmetičkim proizvodima,koji su prilagođeni krznu vašeg ljubimca. Rado ćemo s vama podijeliti naše znanje, jer što vlasnik bolje održava svog psa, nama i psu je lakše!</p>
+        </div>          
+      </div>
+    </div>
+    <!-- Usluge !END!-->
+  
+  
+    <!-- Video -->
+    <div id="video">
+      <div class="embed-responsive embed-responsive-16by9">
+        <video class="video-fluid z-depth-1" autoplay loop muted>
+          <source src="video/promo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!-- Video !END! -->
+  
+  
+    <!-- Osoblje -->
+    
+    <div id="osoblje">
+        <h2 class="text-center mt-5 mb-5">Osoblje</h2>
+      <div class="card-deck text-center">
+        <div class="card">
+          <img src="img/osobljePic01.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <div class="card-body">
+            <h3 class="card-title">Mate Karaula</h3>
+            <p class="card-text">dr.med.vet</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Tekst koji opisuje djelatnika....</small>
           </div>
         </div>
-
-        <!-- Video !END! -->
-
-        <!-- Lokacija -->
-
-        <div id="lokacija">
-          <h2 class="text-center mt-5 mb-5">Lokacija</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d89352.12806101772!2d17.154449!3d45.5854384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476798b3c16f69d3%3A0x772fba4c4ec0f35!2sKARAULA%20VETERINARSKA%20AMBULANTA%20d.o.o.!5e0!3m2!1shr!2shr!4v1570980631412!5m2!1shr!2shr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="card">
+          <img src="img/osobljePic02.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <div class="card-body">
+            <h3 class="card-title">Lana Ema Elezović</h3>
+            <p class="card-text">tehničarka</p>
           </div>
-        <!-- Lokacija !END! -->
+          <div class="card-footer">
+            <small class="text-muted">Tekst koji opisuje djelatnika....</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/osobljePic03.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <div class="card-body">
+            <h3 class="card-title">Ksenija Karaula</h3>
+            <p class="card-text">voditeljica i osnivač</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Tekst koji opisuje djelatnika....</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/osobljePic04.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <div class="card-body">
+            <h3 class="card-title">Tomislav Simonić</h3>
+            <p class="card-text">dr.med.vet</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Tekst koji opisuje djelatnika....</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Osoblje !END! -->
+      
+  
+    <!-- Lokacija -->
+    <div id="lokacija" class="mt-5 mb-5">
+      <h2 class="text-center m-5">Lokacija</h2>
+      <div class="embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d89352.12806101772!2d17.154449!3d45.5854384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476798b3c16f69d3%3A0x772fba4c4ec0f35!2sKARAULA%20VETERINARSKA%20AMBULANTA%20d.o.o.!5e0!3m2!1shr!2shr!4v1570980631412!5m2!1shr!2shr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <!-- Lokacija !END! -->
 
+    <!-- Kontakt -->
+    <div id="kontakt">
+      <div class="innerGrid" id="innerGridNumber">
+        <img src="img/phoneLogo.svg" class="pt-4" alt="Smiley face" width="25">
+        <p class="pt-3">043 331 081</p>
+      </div>
+      <div class="innerGrid" id="innerGridAdress">
+        <img src="img/mapsLogo.svg" class="pt-4" alt="Smiley face" width="25">
+        <p class="pt-3">Pere Štefanovića 6</p>
+      </div>
+      <div class="innerGrid" id="innerGridMail">
+        <img src="img/mailLogo.svg" class="pt-4" alt="Smiley face" width="30">
+        <p class="pt-3">karaula.veterinar@inet.hr</p>
+      </div>
+
+      <div class="innerGridInfo text-center" id="innerGridInfo">
+        <h3>Info</h3>
+        <p>Karaula Veterinarska Ambulanta D.O.O. <br>
+        OIB 55160819137 <br>
+        IBAN HR3624810001111004964</p>
+        <h3>Radno vrijeme:</h3>
+        <p>Pon-pet: 08-20h <br>
+        Sub: 08-13h</p>
+      </div>
+
+      <div id="innerGridForm">
+        <form action="#"" class='contact_form'>
+          <div class="form-group ml-4 mr-4 pt-5">
+              <input name="name" type="text" required class="form-control feedback-input" placeholder="Ime" />
+              <input name="email" type="text" required class="form-control feedback-input" placeholder="Email" />
+              <textarea name="text" class="form-control feedback-input" placeholder="Poruka"></textarea>
+            <input type="submit" class="form-group" value="Pošalji" />
+          </div>
+        </div>
+      </div>      
+    <!-- Kontakt !END! -->
+
+      
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

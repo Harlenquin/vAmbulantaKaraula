@@ -2,42 +2,180 @@
 
 /* Basic settings */
 
-body, html
-{
-    max-width: 1200px;
-    width: 100%;
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
+    /*max-width: 1200px;*/
 }
 
 
 /* Navigation */
 
-#logo{
-    width: 50%;
+.navbar{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-item{
+    text-transform: uppercase;
+}
+
+#navigation, .bg-light{
+    background-color: #6495ED!important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+.callLogo{
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.navbar-toggler{
+    width: 56px;
+    justify-self: end;
+}
+
+.bd-highlight{
+    list-style-type: none;
 }
 
 
 
 /* Promo */
 
+#promo{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .carousel-item{
     height: 500px;
 }
 
+.view{
+    display:block;
+    margin:auto;
+}
+
+
 
 /* Usluge */
+
+#usluge{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 #usluge h2{
     margin-bottom: 50px;
 }
 
 #usluge img{
-    width: 15em;
+    width: 8em;
+}
+
+#usluge .smallerImg{
+    width: 7em;
+}
+/* Video */
+
+#video{
+    border-top: 10px solid #6495ED;
+    border-bottom: 10px solid #6495ED;
 }
 
 /* Osoblje */
 
-#osoblje img{
-    width: 400px;
+#osoblje{
+    max-width: 1200px;
     margin: 0 auto;
 }
+
+
+/* Lokacija */
+
+.embed{
+    overflow:hidden;
+    padding-bottom:20%;
+    position:relative;
+    height:0;
+}
+
+.embed iframe{
+    left:0;
+    top:0;
+    height: 50vh;
+    width: 100%;
+    position:absolute;
+}
+
+/* Kontakt */
+
+#kontakt{
+    background: #6495ED;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 50px;
+}
+
+.innerGrid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: 3px dotted white;
+}
+
+.innerGrid p{
+    align-self: center;
+}
+
+.innerGrid:last-child{
+    border-bottom: none;
+}
+
+.innerGrid img{
+    justify-self: end;
+}
+
+.innerGrid p{
+    justify-self: center;
+}
+
+.innerGridInfo{
+    display: grid;
+}
+
+
+/* MEDIA QUERY - SMALL DEVICES */
+@media (min-width: 576px)
+{
+    /* Kontakt */
+
+    #kontakt{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px 90px 90px;
+    }
+
+    #innerGridAdress{
+        grid-row: 2;
+    }
+
+    #innerGridMail{
+        grid-row: 3;
+    }
+
+    #innerGridInfo{
+        grid-row: 1/4;
+    }
+
+    #innerGridForm{
+        grid-row: 1/2;
+    }
+}
+
