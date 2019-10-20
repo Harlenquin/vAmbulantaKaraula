@@ -15,8 +15,6 @@ html, body{
 .navbar{
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .nav-item{
@@ -49,13 +47,9 @@ html, body{
 
 /* Promo */
 
-#promo{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .carousel-item{
-    height: 500px;
+    height: 92vh;
+    width: 100vw;
 }
 
 .view{
@@ -86,8 +80,8 @@ html, body{
 /* Video */
 
 #video{
-    border-top: 10px solid #6495ED;
-    border-bottom: 10px solid #6495ED;
+    border-top: 5px solid #6495ED;
+    border-bottom: 5px solid #6495ED;
 }
 
 /* Osoblje */
@@ -98,11 +92,29 @@ html, body{
 }
 
 
-/* Lokacija */
+/* Info */
+
+#info{
+    background: #b2cbdb;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    padding: 50px;
+    margin: 0 auto;
+    align-items: center;
+}
 
 .embed{
+    justify-self: end;
+}
+
+#innerGrid{
+   
+}
+
+/*.embed{
     overflow:hidden;
-    padding-bottom:20%;
+    padding-bottom:100%;
     position:relative;
     height:0;
 }
@@ -110,72 +122,54 @@ html, body{
 .embed iframe{
     left:0;
     top:0;
-    height: 50vh;
+    height: 30vh;
     width: 100%;
     position:absolute;
-}
+}*/
 
-/* Kontakt */
+/* Footer */
 
-#kontakt{
+footer{
     background: #6495ED;
     display: grid;
-    grid-template-columns: 1fr;
-    color: white;
-    padding: 50px;
 }
-
-.innerGrid{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    border-bottom: 3px dotted white;
-}
-
-.innerGrid p{
-    align-self: center;
-}
-
-.innerGrid:last-child{
-    border-bottom: none;
-}
-
-.innerGrid img{
-    justify-self: end;
-}
-
-.innerGrid p{
-    justify-self: center;
-}
-
-.innerGridInfo{
-    display: grid;
-}
-
 
 /* MEDIA QUERY - SMALL DEVICES */
 @media (min-width: 576px)
 {
-    /* Kontakt */
+    /* Info */
 
-    #kontakt{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 90px 90px 90px;
+    #info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
     }
 
-    #innerGridAdress{
-        grid-row: 2;
+    .innerGrid{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
     }
 
-    #innerGridMail{
-        grid-row: 3;
+    #innerGridNumber p, #innerGridAdress p, #innerGridMail p{
+        justify-self: start;
+        margin-left: 30px;
     }
 
-    #innerGridInfo{
-        grid-row: 1/4;
-    }
-
-    #innerGridForm{
-        grid-row: 1/2;
+    #innerGridNumber img, #innerGridAdress img, #innerGridMail img{
+        justify-self: end;
     }
 }
 
+
+/* MEDIA QUERY - LARGE DEVICES */
+
+@media (min-width: 992px) 
+{ 
+    .navbar-light .navbar-nav .nav-link{
+        border-bottom: none;
+    }
+
+    .navbar-collapse{
+        flex-grow: 0;
+    }
+}
