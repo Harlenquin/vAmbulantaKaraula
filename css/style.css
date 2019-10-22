@@ -147,6 +147,14 @@ html, body{
     color: white;
     max-width: 150px;
     justify-self: center;
+    padding: 20px 40px; 
+    text-transform: uppercase; 
+}
+
+#promo .btn:hover{
+    background: white;
+    color: #3D434C;
+    border: 1px solid #3D434C;
 }
 
 .promoText{
@@ -183,9 +191,42 @@ html, body{
     border: 6px outset #6495ED;
 }
 
+/* Osoblje */
+
+#osoblje{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#osoblje .card{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.card-deck{
+    display: grid;
+    justify-items: center;
+}
+
+.card-body{
+    background: #6495ED;
+}
+
+.card-body h3, .card-body p{
+    color: white;
+}
+
+.card-footer{
+    background: #3D434C;
+    color: white!important;
+}
+
+/* Maps */
+
 .embed{
     position: relative;
-    padding-bottom: 50%; // This is the aspect ratio
+    padding-bottom: 500px; // This is the aspect ratio
     height: 0;
     overflow: hidden;
     justify-self: end;
@@ -196,14 +237,7 @@ html, body{
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 100% !important;
-}
-
-/* Osoblje */
-
-#osoblje{
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 500px !important;
 }
 
 
@@ -225,6 +259,10 @@ html, body{
 footer{
     background: #6495ED;
     display: grid;
+}
+
+footer p{
+    color: white;
 }
 
 /* MEDIA QUERY - SMALL DEVICES */
@@ -258,6 +296,14 @@ footer{
     }
 }
 
+/* MEDIA QUERY - MEDIUM DEVICES */
+@media (min-width: 750px)
+{
+    /* Osoblje */
+    .card-deck{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /* MEDIA QUERY - LARGE DEVICES */
 
@@ -308,7 +354,7 @@ footer{
     }
     
     #promo .btn{
-        max-width: 500px;   
+        max-width: 500px;
     }
 
     .promoText{
@@ -317,6 +363,11 @@ footer{
         grid-column: 4;
         color: white;
         font-size: 1.2em;
+    }
+ 
+     /* Osoblje */
+     .card-deck{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
