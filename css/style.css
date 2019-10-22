@@ -6,7 +6,8 @@ html, body{
     max-width: 100%;
     overflow-x: hidden;
     margin: 0 auto;
-    /*max-width: 1200px;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }
 
 
@@ -15,10 +16,17 @@ html, body{
 .navbar{
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-item{
     text-transform: uppercase;
+}
+
+.navbar-brand img{
+    width: 70px;
+    height: auto;
 }
 
 #navigation, .bg-light{
@@ -27,12 +35,37 @@ html, body{
 
 .navbar-light .navbar-nav .nav-link{
     color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 2px solid white!important;
 }
+
+/*.first{
+    border-top: 2px solid white!important;
+}*/
 
 .callLogo{
     justify-self: end;
     margin-right: 10px;
+    border-radius: 100%;
 }
+
+.callLogo img{
+    animation: shadow-pulse 1s infinite;
+    width: 40px;
+    height: auto;
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
 
 .navbar-toggler{
     width: 56px;
@@ -43,21 +76,82 @@ html, body{
     list-style-type: none;
 }
 
+#navbarTogglerDemo02{
+    grid-column: 1/5;
+}
+
+.navbar-light .navbar-toggler{
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("../img/whiteHamburgerIcon.jpg");
+}
+
 
 
 /* Promo */
 
-.carousel-item{
-    height: 92vh;
-    width: 100vw;
+#promo{
+    background-image: url("../img/promoImg01Small.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rebeccapurple;
+    height: 375px;
+    position: relative;
 }
 
-.view{
-    display:block;
-    margin:auto;
+.layer {
+    background-color: rgba(100, 149, 237, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+.layer{
+    display: grid;
+    grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
 
+.layer h1{
+    grid-row: 2;
+    grid-column: 4;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#line1{
+    border-bottom: 2px solid white;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#line2{
+    border-bottom: 2px solid white;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 6;
+}
+
+#promo .btn{
+    grid-row: 4;
+    grid-column: 4;
+    border: 1px solid white;
+    background: #3D434C;
+    color: white;
+    max-width: 150px;
+    justify-self: center;
+}
+
+.promoText{
+    display: none;
+}
 
 /* Usluge */
 
@@ -80,8 +174,29 @@ html, body{
 /* Video */
 
 #video{
-    border-top: 5px solid #6495ED;
-    border-bottom: 5px solid #6495ED;
+    /*background: #6495ED;*/
+}
+
+#frame{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 6px outset #6495ED;
+}
+
+.embed{
+    position: relative;
+    padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    justify-self: end;
+}
+
+.embed iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* Osoblje */
@@ -104,28 +219,6 @@ html, body{
     align-items: center;
 }
 
-.embed{
-    justify-self: end;
-}
-
-#innerGrid{
-   
-}
-
-/*.embed{
-    overflow:hidden;
-    padding-bottom:100%;
-    position:relative;
-    height:0;
-}
-
-.embed iframe{
-    left:0;
-    top:0;
-    height: 30vh;
-    width: 100%;
-    position:absolute;
-}*/
 
 /* Footer */
 
@@ -141,14 +234,19 @@ footer{
 
     #info{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 400px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #innerGridInfo{
+        grid-column: 2;
     }
 
     .innerGrid{
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
+
 
     #innerGridNumber p, #innerGridAdress p, #innerGridMail p{
         justify-self: start;
@@ -165,6 +263,8 @@ footer{
 
 @media (min-width: 992px) 
 { 
+
+
     .navbar-light .navbar-nav .nav-link{
         border-bottom: none;
     }
@@ -172,4 +272,56 @@ footer{
     .navbar-collapse{
         flex-grow: 0;
     }
+
+    #navbarTogglerDemo02{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        padding: 0 20px;
+        border-bottom: none!important;
+        margin-top: 10px;
+    }
+
+    .first{
+        margin-top: 0;
+    }
+
+    .callLogo{
+        grid-column: 3;
+    }
+
+    /* Promo */
+
+    #promo{
+        background-image: url("../img/promoImg01Large.jpg");
+        height: 500px;
+    }
+
+    .layer{
+        grid-template-columns: 1fr 300px 50px 4fr 50px 300px 1fr;
+    }
+    
+    .layer h1{
+        font-size: 2.3em;
+    }
+    
+    #promo .btn{
+        max-width: 500px;   
+    }
+
+    .promoText{
+        display: inline-block;
+        grid-row: 3;
+        grid-column: 4;
+        color: white;
+        font-size: 1.2em;
+    }
+}
+
+/* MEDIA QUERY - LARGE DEVICES */
+@media (min-width: 1200px) 
+{ 
+    
 }
