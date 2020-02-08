@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/282723246a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Veterinarska ambulanta Karaula</title>
@@ -52,34 +54,41 @@
     </div>
     <!-- Navigation !END! -->
 
+    <div id="slider">
+      <ul class="slides">
+          <div class="layer text-center">
+            <div id="line1"></div>
+            <h1>Veterinarska ambulanta Karaula</h1>
+            <div id="line2"></div>
+            <p class="promoText">Naša misija je dati svakom kućnom ljubimcu najbolju njegu, dok klijentima najbolje iskustvo.</p>
+            <a href="#info" class="btn">Kontakt</a>
+          </div>
 
-    <!-- Promo -->
-    <div id="promo" class="text-center">
-      <div class="layer">
-          <div id="line1"></div>
-          <h1>Veterinarska ambulanta Karaula</h1>
-          <div id="line2"></div>
-          <p class="promoText">Naša misija je dati svakom kućnom ljubimcu najbolju njegu, dok klijentima najbolje iskustvo.</p>
-          <a href="#info" class="btn">Kontakt</a>
-      </div>
+          <li class="slide slide1"></li>
+          <li class="slide slide2"></li>
+          <li class="slide slide3"></li>
+          <li class="slide slide4"></li>
+          <li class="slide slide5"></li>
+          <li class="slide slide1"></li>
+          
+      </ul>
     </div>
-  
   
     <!-- Usluge -->
     <div id="usluge" class="mb-5">
       <h2 class="text-center font-weight-bold mt-5">Usluge</h2>
       <div class="row">
-        <div class="text-center col-md-6 col-lg-4">
+        <div class="text-center col-md-6 col-lg-4 pop">
           <img src="img/doctor.svg" class="smallerImg" alt="...">
           <h3 class="font-weight-bold mt-4 mb-4">Internistički pregledi</h3>
           <p class="mx-auto">U veterinarskoj ambulanti Karaula vaš će ljubimac dobiti potpunu primarnu veterinarsku njegu kao i niz specijalističkih pregleda poput dermatološkog, oftalmološkog, kardiološkog.</p>
         </div>
-        <div class="text-center col-md-6 col-lg-4">
+        <div class="text-center col-md-6 col-lg-4 pop">
           <img src="img/medkit.svg" alt="...">
           <h3 class="font-weight-bold mt-4 mb-4">Preventivna cijepljenja</h3>
           <p class="mx-auto">Štenci i mačići imaju kolostralna antitijela do dobi od oko 3 mjeseca. Njihov nivo počinje padati u dobi između 6 i 8 tjedana, ovisno o cjepnom statusu majke. Upravo u toj dobi štenad prima prvo cjepivo protiv zaraznih bolesti.</p>
         </div>
-        <div class="text-center col-md-6 col-lg-4">
+        <div class="text-center col-md-6 col-lg-4 pop popBlue">
           <img src="img/paw.svg" alt="...">
           <h3 class="font-weight-bold mt-4 mb-4">Šišanje, kupanje</h3>
           <p class="mx-auto">Vašeg ljubimca njegujemo sa kvalitetnim kozmetičkim proizvodima,koji su prilagođeni krznu vašeg ljubimca. Rado ćemo s vama podijeliti naše znanje, jer što vlasnik bolje održava svog psa, nama i psu je lakše!</p>
@@ -108,49 +117,67 @@
         <h2 class="text-center font-weight-bold mt-5">Osoblje</h2>
       <div class="card-deck text-center">
         <div class="card m-5 shadow-lg rounded">
-          <img src="img/osobljePic01.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <img src="img/staff/osobljePic01.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
           <div class="card-body">
             <h3 class="card-title font-weight-bold">Mate Karaula</h3>
             <p class="card-text">dr.med.vet</p>
           </div>
           <div class="card-footer">
-            <small>Tekst koji opisuje djelatnika....</small>
-          </div>
+            <small class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis erat ac nibh luctus luctus eget ut risus. Nunc cursus nulla ac dignissim porttitor.</small>
+            <button type="button" class="btn btn-secondary show">Informacije</button>
+            </div>
         </div>
         <div class="card m-5 shadow-lg rounded">
-          <img src="img/osobljePic02.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <img src="img/staff/osobljePic02.jpg" class="abscard-img-top mx-auto d-block img-fluid" alt="slika">
           <div class="card-body">
             <h3 class="card-title font-weight-bold">Lana Elezović</h3>
             <p class="card-text">tehničarka</p>
           </div>
           <div class="card-footer">
-            <small>Tekst koji opisuje djelatnika....</small>
-          </div>
+            <small class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis erat ac nibh luctus luctus eget ut risus. Nunc cursus nulla ac dignissim porttitor.</small>
+            <button type="button" class="btn btn-secondary show">Informacije</button>
+            </div>
         </div>
         <div class="card m-5 shadow-lg rounded">
-          <img src="img/osobljePic03.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <img src="img/staff/osobljePic03.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
           <div class="card-body">
             <h3 class="card-title font-weight-bold">Ksenija Karaula</h3>
             <p class="card-text">voditeljica i osnivač</p>
           </div>
           <div class="card-footer">
-            <small>Tekst koji opisuje djelatnika....</small>
-          </div>
+            <small class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis erat ac nibh luctus luctus eget ut risus. Nunc cursus nulla ac dignissim porttitor.</small>
+            <button type="button" class="btn btn-secondary show">Informacije</button>
+            </div>
         </div>
         <div class="card m-5 shadow-lg rounded">
-          <img src="img/osobljePic04.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
+          <img src="img/staff/osobljePic04.jpg" class="card-img-top mx-auto d-block img-fluid" alt="slika">
           <div class="card-body">
             <h3 class="card-title font-weight-bold">Tomislav Simonić</h3>
             <p class="card-text">dr.med.vet</p>
+            
           </div>
           <div class="card-footer">
-            <small>Tekst koji opisuje djelatnika....</small>
+            <small class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis erat ac nibh luctus luctus eget ut risus. Nunc cursus nulla ac dignissim porttitor.</small>
+            <button type="button" class="btn btn-secondary show">Informacije</button>
           </div>
         </div>
       </div>
     </div>
     
     <!-- Osoblje !END! -->
+
+    <h3 class="text-center">Ocijenite naše usluge.</h3>
+
+    <div id="rate">
+      <i class="fas fa-star" id="1"></i>
+      <i class="fas fa-star" id="2"></i>
+      <i class="fas fa-star" id="3"></i>
+      <i class="fas fa-star" id="4"></i>
+      <i class="fas fa-star" id="5"></i><br>
+      <p class="pl-5" id="result"></p>
+    </div>
+
+    <img class="gif" data-wait="true" src="img/dogWalking.gif">
 
     <!-- Maps -->
     <div>
@@ -200,9 +227,11 @@
       
     </footer>
     <!-- Footer !END!-->
+
+    <!-- Custom jquery-->
+    <script src="js/main.js"></script>
       
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
