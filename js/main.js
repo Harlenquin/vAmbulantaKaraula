@@ -81,12 +81,16 @@ $(function(){
             showBtn.css({'marginTop' : 15 + 'px'});
             $(this).prev().append('<br>');
             $(this).parent().css({'height' : 100 + "%"});
+            //
+            $('.rateH3').css({'marginTop' : '200px'});
         }
         else{
             $("br").remove();
             $(this).prev().addClass('d-none');
             $(this).parent().css({'height' : 65 + "px"});
             showBtn.css({'marginTop' : 0});
+            //
+            $('.rateH3').css({'marginTop' : '0px'});
         }
     });
 });
